@@ -1,19 +1,21 @@
 #include <stdio.h>
-
 /**
- * main - Prints nunbers between 0 to 9 and letters between a to f.
- *
+ * main - Entry point
+ * Description: 'print numbers of base 16'
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i; for (i = 48; i < 58; i++);
+	int n;
+	int m;
+
+	for (n = 48; n <= 57; n++)
 	{
-		putchar(i);
+		putchar(n);
 	}
-	for (i = 97; i < 103; i++)
+	for (n = 97; m <= 102; m++)
 	{
-		putchar(i);
+		putchar(m);
 	}
 	putchar('\n');
 	return (0);
