@@ -1,33 +1,27 @@
 #include <stdio.h>
+
 /**
- * main - print digit in 2s separed by ,
+ * main - print all possible combinations of a pair of two digit numbers, without any repetition.
  *
  * Return: 0 (Success)
- *
  */
+
 int main(void)
 {
 	int i, j;
-	int a, b, c, d;
 
-	for (i = '0'; i <= 99; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		a = i / 10;
-		b = i % 10;
-
-		for (j = '0'; j <= 99; j++)
+		for (j = 0; j <= 99; j++)
 		{
-			c = j / 10;
-			d = j % 10;
-			if (a < c || (a == c && b < d))
+			if (i < j && i != j)
 			{
-				putchar(a);
-				putchar(b);
-				puchar(' ');
-				putchar(c);
-				putchar(d);
-
-				if (a != '9' && b != 0)
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
@@ -36,6 +30,4 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
-}
