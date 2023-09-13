@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * add - Adds two values
- * n1: The first number to be computed
- * n2: The second number to be computed
- * Return: Integer value
+ * add - Adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
  */
-
 int add(int na, int b)
 {
-	int C;
+	int c;
 
-	C = a + b;
+	c = a + b;
 
-	return (C);
+	return (c);
 }
