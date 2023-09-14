@@ -5,6 +5,7 @@
  * @size: The size of the squares triangle
  * Return: empty
  */
+
 void print_triangle(int size)
 
 {
@@ -12,7 +13,7 @@ void print_triangle(int size)
 	
 	if (size <= 0)
 	{
-	_putchar('\n')
+	_putchar('\n');
 	}
 	else
 	{
