@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/**_strdup - copy of the string given as a parameter.
+/**
+ * _strdup - copy of the string given as a parameter.
  * @str: the string to copy
  *
  * Return: the string copyed
@@ -32,5 +33,5 @@ char *_strdup(char *str)
 	}
 
 	s[a] = '\0';
-	return (s) ;
+	return (s);
 }
